@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div class="form">
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form" action="">
+      <div class="">
+        <label id="name-label">Name</label>
+        <input type="text" name="name" id="name" class="fm-inp" placeholder="Enter your name" required="">
+      </div>
+      <div class="">
+        <label id="email-label" for="">Email</label>
+        <input type="email" name="email" id="email" class="fm-inp" placeholder="Enter your Email" required="">
+      </div>
+      <div class="">
+        <label id="number-label" for="">Age (Optional)</label>
+        <input type="number" name="age" min="10" max="99" id="number" class="fm-inp" placeholder="Age">
+      </div>
+      <div class="">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="fm-inp fm-dpdw" required="">
+          <option disabled="" selected="" value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="inp-rad-ch" checked="">Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="inp-rad-ch">Maybe</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="inp-rad-ch">Not sure</label>
+      </div>
+      <div class="">
+        <p>
+          What is your favorite feature of freeCodeCamp?
+        </p>
+        <select id="most-like" name="mostLike" class="fm-inp fm-dpdw" required="">
+          <option disabled="" selected="" value="">Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+      <div class="">
+        <p>
+          What would you like to see improved? (Check all that apply)
+        </p>
+        <label><input class="inp-rad-ch" name="prefer" value="front-end-projects" type="checkbox">Front-end
+          Projects</label>
+        <label>
+          <input class="inp-rad-ch" name="prefer" value="back-end-projects" type="checkbox">Back-end Projects</label>
+        <label><input class="inp-rad-ch" name="prefer" value="data-visualization" type="checkbox">Data
+          Visualization</label>
+        <label><input class="inp-rad-ch" name="prefer" value="challenges" type="checkbox">Challenges</label>
+        <label><input class="inp-rad-ch" name="prefer" value="open-source-community" type="checkbox">Open Source
+          Community</label>
+        <label><input class="inp-rad-ch" name="prefer" value="gitter-help-rooms" type="checkbox">Gitter help
+          rooms</label>
+        <label><input class="inp-rad-ch" name="prefer" value="videos" type="checkbox">Videos</label>
+        <label><input class="inp-rad-ch" name="prefer" value="city-meetups" type="checkbox">City Meetups</label>
+        <label><input class="inp-rad-ch" name="prefer" value="wiki" type="checkbox">Wiki</label>
+        <label><input class="inp-rad-ch" name="prefer" value="forum" type="checkbox">Forum</label>
+        <label><input class="inp-rad-ch" name="prefer" value="additional-courses" type="checkbox">Additional
+          Courses</label>
+      </div>
+      <div class="">
+        <p>Any comments or suggestions?</p>
+        <textarea id="inp-t" class="" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="btn-sub">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
