@@ -1,0 +1,104 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 
+115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+header{
+    text-align: center;
+}
+
+
+body{
+    color: white;
+}
+
+.form{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+#survey-form{
+    background-color: rgba(42, 42, 116, 0.801);
+    width: 40rem;
+    padding: 4rem;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(233, 233, 233);
+}
+
+#title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#description{
+    margin-top: 0;
+    font-style: italic;
+    font-style: 25px;
+    font-weight: lighter;
+}
+
+.fm-inp{
+    color: rgb(42, 42, 116);
+    display: block;
+    width: 100%;
+    height: 1.3rem;
+    padding: 5px 10px;
+    border: 1px solid rgb(42, 42, 116);;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.fm-dpdw{
+    height: 2.3rem;
+    width: 100%;
+}
+
+.btn-sub button{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(40, 209, 40);
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    border: none;
+}
+
+.btn-sub button:hover{
+    cursor: pointer;
+}
+
+#inp-t{
+    height: 7rem;
+    width: 100%;
+}
+
+.inp-rad-ch {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+label {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
